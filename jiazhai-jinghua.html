@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
-<title>家宅淨化：空間不安時，為何人也容易失衡 ｜ 隨緣堂　sov15</title>
+<title>家宅淨化：空間不安時，為何人也容易失衡 ｜ 隨緣堂</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="從空間氣場、家宅不安、灑淨與淨宅觀念，說明環境如何影響情緒、睡眠與整體生活狀態。">
 <link rel="stylesheet" href="../css/style.css">
@@ -10,18 +10,25 @@
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a href="../index.html" class="brand">
-        <span>隨緣堂</span>
-        <span class="brand-cn">SUI YUAN TANG · sov15</span>
+      <a href="index.html" class="brand">
+        <span class="brand-tc">隨緣堂</span>
+        <span class="brand-divider">／</span>
+        <span class="brand-en">SUI YUAN TANG</span>
       </a>
-      <button class="nav-toggle" onclick="document.querySelector('.nav').classList.toggle('open')">選 單</button>
+      <button class="nav-toggle" aria-label="選單" onclick="document.querySelector('.nav').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
       <nav class="nav">
-        <a href="../index.html">首頁</a>
-        <a href="../archive.html" class="active">文章總覽</a>
-        <a href="../categories/daofa.html">道法專欄</a>
-        <a href="../categories/yinfu.html">陰符經</a>
-        <a href="../categories/taiyi.html">太乙金華</a>
-        <a href="../about.html">關於</a>
+        <a href="index.html">首頁</a>
+        <a href="archive.html" class="active">文章總覽</a>
+        <a href="categories/daofa.html">道法專欄</a>
+        <a href="categories/yinfu.html">陰符經</a>
+        <a href="categories/taiyi.html">太乙金華</a>
+        <a href="faq.html">常見問題</a>
+        <a href="cases.html">民俗實錄</a>
+        <a href="glossary.html">詞彙表</a>
+        <a href="about.html">關於</a>
+        <a href="index.html#contact" class="nav-cta">留言</a>
       </nav>
     </div>
   </header>
@@ -54,28 +61,35 @@
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <div>
+      <div class="footer-brand">
         <div class="footer-brand-cn">隨緣堂　·　道法札記</div>
-        <p class="footer-tag">道教玄學、道法諮詢、修行養氣與道家經典。<br>從《道德經》、《陰符經》到太乙金華宗旨,一筆一字皆是修行。</p>
+        <div class="footer-brand-en">SUI YUAN TANG · A JOURNAL ON TAOIST PRACTICE</div>
+        <p class="footer-tag">道教玄學、道法諮詢、修行養氣與道家經典。<br>從《道德經》、《陰符經》到太乙金華宗旨，一筆一字皆是修行。</p>
       </div>
       <div class="footer-col">
-        <h4>專欄</h4>
+        <h4>專 欄　·　Columns</h4>
         <ul>
-          <li><a href="../categories/daofa.html">道法專欄</a></li>
-          <li><a href="../categories/yinfu.html">陰符經專欄</a></li>
-          <li><a href="../categories/taiyi.html">太乙金華宗旨</a></li>
+          <li><a href="categories/daofa.html">道法專欄</a></li>
+          <li><a href="categories/yinfu.html">陰符經專欄</a></li>
+          <li><a href="categories/taiyi.html">太乙金華宗旨</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>網站</h4>
+        <h4>網 站　·　Site</h4>
         <ul>
-          <li><a href="../index.html">首頁</a></li>
-          <li><a href="../archive.html">文章總覽</a></li>
-          <li><a href="../about.html">關於隨緣堂</a></li>
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="archive.html">文章總覽</a></li>
+          <li><a href="faq.html">常見問題</a></li>
+          <li><a href="cases.html">民俗實錄</a></li>
+          <li><a href="glossary.html">詞彙表</a></li>
+          <li><a href="about.html">關於</a></li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">© 2018 — 2026　隨緣堂　sov15　·　道在日用中</div>
+    <div class="footer-bottom">
+      © <span id="year">2026</span> &nbsp; SUI YUAN TANG &nbsp;·&nbsp; ALL RIGHTS RESERVED &nbsp;·&nbsp; HAND-CRAFTED IN TAIWAN
+    </div>
   </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
